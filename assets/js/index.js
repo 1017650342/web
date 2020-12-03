@@ -1,6 +1,6 @@
 $(function () {
     //调用函数，获取用户基本信息
-    getUrseInFo();
+    getUserInfo();
     var layer = layui.layer
     $('#btnLgout').on('click', function () {
         // 提示用户是否确认退出
@@ -15,7 +15,7 @@ $(function () {
     })
 })
 // 获取用户的基本信息
-function getUrseInFo () {
+function getUserInfo () {
     $.ajax({
         method: 'GET',
         url: '/my/userinfo',
